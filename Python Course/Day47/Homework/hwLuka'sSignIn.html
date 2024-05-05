@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="homework.css">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: 'Roboto';
+}
+
+label, input{
+    display: block;
+}
+
+input{
+    width: 300px;
+    border: 2px solid black;
+    height: 25px;
+    border-radius: 5px;
+}
+
+form button{
+    width: 308px;
+    background-color: black;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border-radius: 5px;
+    border: transparent;
+}
+
+form button:hover{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form>
+        <label for="l1">Email address</label>
+        <input type="email" id="l1" required><br>
+        <label for="l2">Password</label>
+        <input type="password" id="l2" required><br>
+        <button>Sign in</button><br><br>
+        <a href="#">Forgot Your Password?</a>
+    </form>
+</body>
+</html>

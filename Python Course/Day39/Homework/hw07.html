@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World News Site</title>
+
+    <style>
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header, main, footer {
+
+    margin: 20px;
+
+}
+
+header {
+
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+nav ul {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+nav ul li {
+
+    display: inline;
+    margin-right: 15px;
+
+}
+
+main {
+
+    display: flex;
+
+}
+
+article, aside {
+
+    flex: 1;
+    margin: 10px;
+
+}
+
+footer {
+
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.article details {
+
+    display: none;
+
+}
+
+.article details:target {
+
+    display: block;
+
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+
+}
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>World News</h1>
+        <nav>
+            <ul>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#article1-details">Article 1</a></li>
+                <li><a href="#article2-details">Article 2</a></li>
+                <li><a href="#article3-details">Article 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section id="about us">
+            <h2>About Us</h2>
+            <p> News articles are written to inform and educate readers on current affairs/events. They are used to provide readers with information they need/want to know about the world around them. You will either be told what to write your article on or have a choice of topics related to the module this assessment is for </p>
+            <img src="Wrldnews.avif">
+            <img src="ragac.avif">
+            <img src="ragaciseve.avif">
+            <img src="karoche.jpeg">
+        </section>
+
+        <section id="articles">
+            <article id="article1-details">
+                <h2>Break News</h2>
+                <p>This is a brief text of break news. <a href="#article1-details">Read more</a></p>
+            </article>
+        
+            <article id="article2-details">
+                <h2>World News</h2>
+                <p>This is a brief text of world news. <a href="#article2-details">Read more</a></p>
+            </article>
+        
+            <article id="article3-details">
+                <h2>Breakthrough News</h2>
+                <p>This is a brief text of breakthrough news. <a href="#article3-details">Read more</a></p>
+            </article>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>Contact Us</p>
+        <p>PHONE NUMBER<br>
+           +995-557-67-87-99
+        </p>
+    </footer>
+  
+
+</body>
+</html>

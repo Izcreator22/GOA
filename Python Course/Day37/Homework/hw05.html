@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet">
+
+    <style>
+.box0,.box1{
+    background-color: aliceblue;
+    width: 250px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.box2{
+    background-color: aliceblue;
+    width: 250px;
+    height: 150px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+.top{
+    top: 85px;
+    left: 270px;
+    position: absolute;
+}
+
+.box3{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 1px black;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+}
+
+.box4{
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#white,#white0{
+    background-color: white;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <h2>User</h2>
+
+        <div class="box0">
+            <label for="">User Name*</label>
+            <input type="text"><br><br>
+            <label for="">First Name*</label>
+            <input type="text"><br><br>
+            <label for="">Last Name*</label>
+            <input type="text"><br><br>
+            <label for="">Language</label><br>
+            <select>
+                <option>English</option>
+            </select><br><br>
+        </div><br><br><br>
+
+        <h2>Contact Information</h2>
+        <div class="box1">
+            <label for="">Email*</label><br>
+            <input type="text"><br><br>
+            <label for="">Work Phone*</label>
+            <input type="tel"><br><br>
+            <label for="">Mobile Phone</label>
+            <input type="tel"><br><br>
+            <label for="">Notification Preference</label><br>
+            <input type="checkbox">Email
+            <input type="checkbox">SMS<br>
+        </div>
+
+        <div class="top">
+            <h2>Security</h2>
+            <div class="box2">
+                <label for="">Password *</label><br>
+                <input type="password"><br><br>
+                <label for="">Confrim Password *</label>
+                <input type="password">
+            </div><br><br>
+
+            <h2>Role Assignment</h2>
+
+            <div class="box3">
+                <h2>Roles</h2>
+                <div class="box4">
+                    <p>Controls Engineer</p>
+                    <p id="white">Maintenance Engineer</p>
+                    <p>Maintenance Manager</p>
+                    <p id="white0">Production Manager</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
+
+</body>
+</html>

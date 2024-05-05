@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+    @keyframes rotate1 {
+      0% {
+        transform: rotate(0deg) translateY(-100px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateY(-100px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate2 {
+      0% {
+        transform: rotate(0deg) translateY(100px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateY(100px) rotate(-360deg);
+      }
+    }
+
+    @keyframes rotate3 {
+      0% {
+        transform: rotate(0deg) translateX(-100px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(-100px) rotate(-360deg);
+      }
+    }
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+    }
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #b91f36;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 0px 20px rgb(185, 31, 54, 0.7);
+    }
+
+.square1 {
+  animation-name: rotate1;
+  animation-duration: 6s;
+    }
+
+.square2 {
+  animation-name: rotate2;
+  animation-duration: 6s;
+    }
+
+.square3 {
+  animation-name: rotate3;
+  animation-duration: 6s;
+    }
+
+.square p {
+  position: absolute;
+  color: black;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="square square1">
+      <p>1</p>
+    </div>
+    <div class="square square2">
+      <p>2</p>
+    </div>
+    <div class="square square3">
+      <p>3</p>
+    </div>
+  </div>
+</body>
+</html>

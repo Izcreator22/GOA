@@ -1,0 +1,44 @@
+<!--Task 5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Inline-->
+    <button onclick="this.style.backgroundColor='red'">Change Color</button>
+</body>
+</html>
+
+<!--Internal-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton" onclick="changeColor()">Change Color</button>
+    <script>
+        function changeColor(){
+            document.getElementById("myButton").style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>
+
+<!--External-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton" oncanplay="changeColor()">Change Color</button>>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <i class="icon fas fa-star"></i>
+    <title>Flex</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body{
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    width: 1200px;
+    height: 750px;
+    border-radius: 10px;
+    padding: 0 3.125rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(45, 66, 221);
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadein 2s ease-out;
+}
+
+nav ul{
+    font-size: 1.125rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+nav ul li{
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    color: aqua;
+}
+
+h1{
+    font-style: Sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    animation: movelogo 3s infinite alternate;
+}
+
+@keyframes movelogo {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+
+#muqi{
+    color: rgb(42, 41, 41);
+    font-weight: 700;
+}
+
+button{
+    color: white;
+    padding: 0.9rem 1.25rem;
+    background-color: rgb(171, 100, 237);
+    border: none;
+    font-size: 1.125rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: buttonscale 1s infinite alternate;
+}
+
+@keyframes buttonscale {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+
+button.service{
+    color: rgb(125, 2, 125);
+    background-color: rgb(241, 238, 238);
+    border: none;
+}
+
+button.contact{
+    color: rgb(241, 238, 238);
+    background-color: rgb(73, 32, 237);
+    border: none;
+}
+
+button:hover{
+    background-color: black;
+}
+
+main{
+    width: 100%;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    animation: fadein 1s ease-out;
+}
+
+#text-section, img{
+    width: 50%;
+}
+
+#text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+#text-section h2{
+    font-size: 4.100rem;
+    color: rgb(255, 255, 255);
+}
+
+#text-section p{
+    color: rgb(255, 255, 255);
+}
+
+#text-section .button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+img {
+    box-shadow: 0 20px 25px -5px rgb(10, 10, 10), 0 10px 10px -5px rgb(10, 10, 10);;
+    transition: transform 0.5 ease-in-out;
+    padding: 20px;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pulse {
+  transition: transform 0.3s ease-in-out;
+}
+
+.pulse:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1><strong>TECHVIO</strong></h1>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Pages</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <button>Get It Support</button>
+        </nav>
+
+        <main>
+            <div id="text-section">
+                <h2>IT Solutions &<br>Business Services Company</h2><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed eiusmod tempor magna aliqua, magna aliqua. ipsium is simply dummy text of the printing.</p><br>
+                <div class="button-container">
+                    <button class="service">Our Service</button>
+                    <button class="contact">Contact Us</button>
+                </div>
+            </div>
+            <img src="IT Solutions & Business Service Company.png" alt="IT Solutions photo" class="pulse">
+        </main>
+    </div>
+</body>
+</html>

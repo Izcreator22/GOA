@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    background-color: rgb(16, 54, 125);
+}
+
+.container{
+    margin: 400px;
+    gap: 10px;
+    background-color: blue;
+    display: grid;
+    height: 800px;
+}
+
+.Mansory1, .Responsive, .Overlap, .Fluid, .Explicitlyplaced, .NegativeSpace, .FlexibileBreadth, .Mansory2, .Mansory3, .DOMOrder, .NamedTracks{
+    background-color: white;
+    color: rgb(44, 101, 206);
+    text-align: center;
+    padding: 15px;
+}
+
+.Responsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NegativeSpace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mansory3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FlexibileBreadth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mansory1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.Overlap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.Explicitlyplaced{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 3;
+}
+
+.Mansory2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.NamedTracks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="Mansory1">Mansory I</div>
+        <div class="Responsive">Responsive</div>
+        <div class="Overlap">Overlap</div>
+        <div class="Fluid">Fluid</div>
+        <div class="Explicitlyplaced">Explicitly placed</div>
+        <div class="NegativeSpace">Negative Space</div>
+        <div class="FlexibileBreadth">Flexibile Breadth</div>
+        <div class="Mansory2">Mansory II</div>
+        <div class="Mansory3">Mansory III</div>
+        <div class="DOMOrder">DOM Order</div>
+        <div class="NamedTracks">Named Tracks</div>
+    </div>
+</body>
+</html>

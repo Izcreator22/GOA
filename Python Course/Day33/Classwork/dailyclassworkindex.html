@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <input type="number" id="num1" placeholder="Enter first number" required><br>
+    <input type="number" id="num2" placeholder="Enter second number" required><br>
+    <input type="text" id="operation" placeholder="Enter operation (+, -, *, /)"><br>
+    <button type="submit">Calculate</button>
+  </form>
+  <p id="result"></p>
+
+<script>
+  function calculate(){
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let operation = document.getElementById("operation").value;
+    let result;
+
+    if (operation === '+') {
+      result = num1 + num2;
+    } else if (operation === '-') {
+      result = num1 - num2;
+    } else if (operation === '*') {
+      result = num1 * num2;
+    } else if (operation === '/') {
+      if (num2 !== 0) {
+        result = num1 / num2;
+      } else {
+        result = "Cannot divide by zero";
+      }
+    } else {
+      result = "Invalid operation";
+    }
+
+    document.getElementById('result').textContent = "Result: " + result;
+    return false;
+
+    }
+
+
+
+
+
+
+// მექანიკური ტიპის ცვლილება არის ის როდესაც ჯავასქრიპტის ძრავას ეუბნები რომ ამ ტიპის მონაცემი შეცვალოს. parseint გამოიყენება რომ გარდავქმნათ კონკრეტული მნიშვნელობა მთელ რიცხვად. ხოლო ავტომატური ნიშნავს როდესაც ძრავა მისით შეცვლის მონაცემს.
+
+// მიმატების გარდა თუ 
+
+  /* //Task 1 Addition:
+  function addition(num1, num2) {
+    const result = num1 + num2;
+    console.log("Addition Result:", result);
+        }
+
+  //Task 1 Multiplication:
+  function multiplication(num1, num2) {
+    const result = num1 * num2;
+    console.log("Multiplication Result:", result);
+        }
+
+  //Task 1 Example:
+  addition(5, 3);
+  multiplication(5, 3);
+
+  // Task 2 Greet function:
+  function greet(name){
+    return "Hello" + name + "!";
+  }
+
+  // Task 2 Example:
+  console.log(greet("Luka"));
+  
+  // Task 3:
+  function addAndMultiply(num1, num2, num3) {
+    const sum = num1 + num2;
+    const result = sum * num3;
+    console.log("Result:", result);
+        }
+
+  // Task 3 Example:
+  addAndMultiply(2, 3, 4);     
+
+  // Task 4 Example:
+  checkEvenOrOdd(5);
+  checkEvenOrOdd(8);      
+
+  // Task 5:
+  function triangle(a, b, c){
+    console.log(a + b > c);
+    console.log(b + c > a);
+    console.log(a + c > b);
+  }
+
+  //Task 5 Example:
+  triangle(6, 9, 12); */
+
+  /* const myInfo = {
+    name: "Luka",
+    email: "lcxvaradze@gmail.com",
+    work: {
+        money: 100000000,
+        workTime: 25
+    }
+}
+
+console.log(myInfo.work.money)
+console.log(myInfo.name)
+
+myInfo.work.workTime = 10;
+
+console.log(myInfo) */
+
+</script>
+</body>
+</html>
+
+//DOM - Document Object Model | Object is all you can see and all you can touch; ობიექტს გააჩნია დახასიათებაც და ფუნქციონალიც; ობიექტი არის ყველაფერი ის რასაც ხედავ და ეხები; ობიექტის ახსნისან იყენებ მეთოდს. 
+
+// DOM - დოკუმენტი ობიექტის სახით.

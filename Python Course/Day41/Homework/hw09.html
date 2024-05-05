@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body {
+    margin: 400px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    width: 550px;
+    height: 400px;
+}
+
+.header, .menu, .hero, .main, .image, .extra, .banner {
+    background-color: #fff;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: black;
+    grid: 0/1;
+}
+
+.menu {
+    background-color: red;
+    grid-column: 2/4
+}
+
+.hero {
+    background-color: blue;
+    grid-column: 1/4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    height: 200px;
+}
+
+.main {
+    background-color: black;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.image {
+    background-color: turquoise;
+    grid-column: 3/4;
+}
+
+.extra {
+    background-color: green;
+    grid-column: 3/4;
+}
+
+.banner {
+    background-color: yellow;
+    grid-column: 1/4;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="hero">Hero</div>
+        <div class="main">Main</div>
+        <div class="image">Image</div>
+        <div class="extra">Extra</div>
+        <div class="banner">Banner</div>
+    </div>
+</body>
+</html>

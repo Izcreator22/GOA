@@ -1,0 +1,57 @@
+// Task 1 :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Div Properties</title>
+<style>
+  #divBlock {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<form>
+  <input type="text" id="color-input" placeholder="Enter background color">
+  <input type="number" id="width-input" placeholder="Enter width">
+  <input type="number" id="height-input" placeholder="Enter height">
+  <input type="text" id="text-input" placeholder="Enter text">
+  <button type="button" onclick="changeDivProperties()">Change</button>
+</form>
+
+<div id="divBlock">
+  <p id="text-paragraph"></p>
+</div>
+
+<script>
+function changeDivProperties() {
+  const colorInput = document.getElementById("color-input").value;
+  const widthInput = document.getElementById("width-input").value;
+  const heightInput = document.getElementById("height-input").value;
+  const textInput = document.getElementById("text-input").value;
+  const divBlock = document.getElementById("divBlock");
+  const textParagraph = document.getElementById("text-paragraph");
+
+  // Change background color
+  divBlock.style.backgroundColor = colorInput;
+
+  // Change width
+  divBlock.style.width = widthInput + "px";
+
+  // Change height
+  divBlock.style.height = heightInput + "px";
+
+  // Set text
+  textParagraph.textContent = textInput;
+}
+</script>
+
+</body>
+</html>
+
+// Task 2:
+// In JS File.
