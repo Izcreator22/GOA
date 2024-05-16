@@ -1,0 +1,35 @@
+<!-- Task 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="numberForm">
+        <label for="number1">Enter number 1:</label>
+        <input type="number" id="number1" name="number1"><br>
+        
+        <label for="number2">Enter number 2:</label>
+        <input type="number" id="number2" name="number2"><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+
+      <script>
+
+        function compareNumbers(){
+          let number1 = Number(document.getElementById("number1").value);
+          let number2 = Number(document.getElementById("number2").value);
+          
+          let resultAnd = (number1 > 18) && (number2 > 18);
+          let resultOr = (number1 > 18) || (number2 > 18);
+          
+          console.log(resultAnd);
+          console.log(resultOr);
+        }
+
+        </script>
+</body>
+</html>
