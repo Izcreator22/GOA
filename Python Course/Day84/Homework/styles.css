@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: rgb(250, 128, 114);
+    overflow: hidden;
+}
+
+#my-box{
+    background-color: rgb(255, 69, 0);
+    width: 200px;
+    height: 200px;
+    font-size: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
