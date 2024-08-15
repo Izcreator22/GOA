@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #button, #hoverArea {
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid black;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #hoverArea {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Click me</button>
+    <div id="hoverArea">Hover over me</div>
+
+    <script>
+        // onload event
+        window.onload = function() {
+            console.log("gjdsnln");
+        };
+
+        // onclick event
+        document.getElementById("button").onclick = function() {
+            console.log("asohfgajsfak");
+        };
+
+        // onmouseover event
+        document.getElementById("hoverArea").onmouseover = function() {
+            console.log("sfjasdh");
+        };
+
+        // onmouseout event
+        document.getElementById("hoverArea").onmouseout = function() {
+            console.log("fhsnrfn");
+        };
+
+        // onmousedown event
+        document.getElementById("button").onmousedown = function() {
+            console.log("gbvsdfnfs");
+        };
+    </script>
+    </script>
+</body>
+</html>
+
