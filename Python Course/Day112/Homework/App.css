@@ -1,0 +1,169 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+  
+.s-symbol {
+    color: #ff7f00;
+    font-size: 32px;
+    margin-right: 10px;
+}
+  
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navigation li {
+    margin-left: 20px;
+}
+  
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+  
+.sign-up {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+  
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+  
+.hero-content {
+    text-align: left;
+    max-width: 500px;
+}
+  
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+  
+.hero-content button {
+    background-color: #ff7f00;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+  
+.hero-image {
+    position: relative;
+}
+  
+.oval-shape {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #ffc107;
+    z-index: -1;
+}
+  
+.oval-shape:first-child {
+    top: 20px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+}
+  
+.oval-shape:last-child {
+    top: -50px;
+    right: -50px;
+    width: 400px;
+    height: 400px;
+}
+  
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+  
+.best-section {
+    padding: 80px 0;
+}
+  
+.best-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.best-section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+  
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.feature {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.feature img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+  
+.feature h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+  
+.footer p {
+    font-size: 14px;
+    color: #666;
+}
+
