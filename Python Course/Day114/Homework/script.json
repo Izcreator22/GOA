@@ -1,0 +1,12 @@
+{
+    "message": "Some random data from the server",
+    "users": [
+        { "id": 1, "name": "Nugzari" },
+        { "id": 2, "name": "Izo" }
+    ],
+    "products": [
+        { "name": "Product A", "price": 20.00 },
+        { "name": "Product B", "price": 30.00 }
+    ]
+}
+
