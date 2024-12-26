@@ -1,0 +1,60 @@
+1:
+// დავამტკიცოთ რომ S = n(n + 1) / 2 მაშინ, როდესაც n = 2R + 1
+function verifySumFormula(R) {
+    const n = 2 * R + 1; // n = 2R + 1
+    const calculatedSum = (n * (n + 1)) / 2;
+
+    // ჯამის გამოთვლა მექანიკურად
+    let actualSum = 0;
+    for (let i = 1; i <= n; i++) {
+        actualSum += i;
+    }
+
+    return calculatedSum == actualSum
+        ? ფორმულა სწორია. ჯამი არის ${calculatedSum}.
+        : ფორმულა მცდარია;
+}
+
+// მაგალითი:
+console.log(verifySumFormula(3)); Output: ფორმულა სწორია. ჯამი არის 28.
+
+
+2:
+// დავამტკიცოთ სიგმას ჯამი
+function sigmaSumFormula(c, b, n) {
+    const calculatedSum = (n * (2 * b + (n - 1) * c)) / 2;
+
+    // გამოთვლა:
+    let actualSum = 0;
+    for (let i = 0; i < n; i++) {
+        actualSum += c * i + b;
+    }
+    return calculatedSum == actualSum
+        ? სიგმას ჯამი სწორია. ჯამი არის ${calculatedSum}.
+        : სიგმას ჯამი მცდარია;
+}
+
+// მაგალითი:
+// a_i = 3i + 2, n = 5
+console.log(sigmaSumFormula(3, 2, 5)); Output: სიგმას ჯამი სწორია. ჯამი არის 40.
+
+3:
+// არითმეტიკული ჯაჭვის ფორმულის დამტკიცება
+function arithmeticSeriesProof(a, l, n) {
+    const calculatedSum = (n * (a + l)) / 2;
+
+    // არითმეტიკული ჯამი ხელით
+    let actualSum = 0;
+    for (let i = a; i <= l; i++) {
+        actualSum += i;
+    }
+
+    return calculatedSum === actualSum
+        ? ფორმულა სწორია. ჯამი არის ${calculatedSum}.
+        : ფორმულა მცდარია;
+}
+
+// მაგალითი:
+// a = 1, l = 10, n = 10
+console.log(arithmeticSeriesProof(1, 10, 10)); Output: ფორმულა სწორია. ჯამი არის 55. 
+

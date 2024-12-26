@@ -1,0 +1,70 @@
+
+NO1: Index:   0,    1,    2,    3,    4
+Value:   5,   12,    3,   18,    7
+
+[Result]
+            /      \
+        [Winner]    [Winner]
+       /      \   /       \
+    [Value] [Value] [Value] [Value]
+       /       /    \        \
+     [5]  [12]   [3]    [18]  [7]
+
+ [Result]
+        /      \
+    [12]     [18]
+   /      \   /       \
+[5]  [12]   [3]    [18]  [7]
+[18]
+      /      \
+  [12]     [18]
+ /      \   /       \
+[5]  [12]   [3]    [18]  [7]
+  
+        18
+        /      \
+    [12]     [18]
+   /      \   /       \
+[5]  [12]   [3]    [18]  [7]
+
+Result: The maximum_find operation on [5, 12, 3, 18, 7] finds the maximum to be 18. // შედეგი: მაქსიმალური ძიების ოპერაცია [5, 12, 3, 18, 7] მაქსიმუმს 18 აღმოაჩენს.
+*/
+
+
+NO2:
+def are_all_different(num1, num2, num3):
+    """
+    Checks if three integers are all different from each other.
+
+    Args:
+      num1: The first integer.
+      num2: The second integer.
+      num3: The third integer.
+
+    Returns:
+      True if all three are different, False otherwise.
+    """
+    if num1 == num2 or num1 == num3 or num2 == num3:
+        return False  # At least two are equal
+    else:
+        return True   # All are different
+
+# Example usage
+number1 = 10
+number2 = 20
+number3 = 30
+
+if are_all_different(number1, number2, number3):
+    print("The three numbers are all different.")
+else:
+    print("At least two of the numbers are the same.")
+
+
+number1 = 10
+number2 = 10
+number3 = 30
+
+if are_all_different(number1, number2, number3):
+    print("The three numbers are all different.")
+else:
+    print("At least two of the numbers are the same.")

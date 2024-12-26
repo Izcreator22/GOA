@@ -1,0 +1,15 @@
+import hashlib
+
+def sha256_file(file_path):
+    hasher = hashlib.sha256()
+    with open(file_path, 'rb') as file:
+        while True:
+            chunk = file.read(4096)
+            if not chunk:
+                break
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+file_path = "/path/to/your/file.ext"
+hash_value = sha256_file(file_path)
+print(f"SHA256 hash of {file_path}: {hash_value}")
