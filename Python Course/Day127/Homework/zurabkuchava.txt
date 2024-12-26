@@ -1,0 +1,26 @@
+def find_palindromes(words):
+    """
+    Finds and returns a list of palindromes in a given list of words.
+
+    Args:
+        words: A list of words (strings).
+
+    Returns:
+        A list of palindrome words (strings).
+    """
+    palindromes = []
+    for word in words:
+        word = word.lower()
+        if word == word[::-1]: # check if word is the same when reversed
+          palindromes.append(word)
+    return palindromes
+
+# Example Usage
+word_list1 = ["Racecar", "hello", "madam", "level", "python", "rotor", "stats"]
+print(f"Palindromes in {word_list1}: {find_palindromes(word_list1)}") # Output: ['racecar', 'madam', 'level', 'rotor', 'stats']
+
+word_list2 = ["kayak", "deified", "refer", "test"]
+print(f"Palindromes in {word_list2}: {find_palindromes(word_list2)}") # Output: ['kayak', 'deified', 'refer']
+
+word_list3 = ["Aibohphobia", "Not a palindrome", "deleveled"]
+print(f"Palindromes in {word_list3}: {find_palindromes(word_list3)}") # Output: ['aibohphobia', 'deleveled']

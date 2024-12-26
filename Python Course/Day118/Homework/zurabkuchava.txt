@@ -1,0 +1,42 @@
+1-13
+import re
+
+def word_length_histogram(text):
+    """
+    Prints a horizontal histogram of the lengths of words in the input text.
+
+    Args:
+        text: The input string.
+    """
+    word_lengths = {}  # Dictionary to store word lengths and counts
+    words = re.findall(r'\b\w+\b', text.lower()) # find all words and convert them to lowercase.
+    for word in words:
+        length = len(word)
+        if length in word_lengths:
+            word_lengths[length] += 1
+        else:
+            word_lengths[length] = 1
+
+    for length, count in sorted(word_lengths.items()):
+        print(f"{length}: {'*' * count} ({count})")
+
+
+1-14
+def char_frequency_histogram(text):
+    """
+    Prints a horizontal histogram of the frequencies of characters in the input text.
+
+    Args:
+        text: The input string.
+    """
+    char_counts = {}  # Dictionary to store character counts
+
+    for char in text:
+        if char in char_counts:
+            char_counts[char] += 1
+        else:
+            char_counts[char] = 1
+
+    for char, count in sorted(char_counts.items()):
+       print(f"'{char}': {'*' * count} ({count})")
+
