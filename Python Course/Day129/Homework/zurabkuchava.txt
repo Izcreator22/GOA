@@ -1,0 +1,54 @@
+function mergeSort(array)
+  if length(array) <= 1
+    return array
+  mid = length(array) // 2
+  left = mergeSort(array[0..mid-1])
+  right = mergeSort(array[mid..length(array)-1])
+  return merge(left, right)
+
+function merge(left, right)
+  result = []
+  i = 0
+  j = 0
+  while i < length(left) and j < length(right)
+    if left[i] <= right[j]
+       append left[i] to result
+       i = i + 1
+    else
+       append right[j] to result
+       j = j + 1
+
+  //append remaining elements to the result list.
+  append all elements in left from index i onwards to result
+  append all elements in right from index j onwards to result
+  return result
+
+
+function quickSort(array, low, high)
+   if low < high
+     pivot_index = partition(array, low, high)
+     quickSort(array, low, pivot_index - 1)
+     quickSort(array, pivot_index + 1, high)
+
+function partition(array, low, high)
+   pivot = array[high]
+   i = low - 1
+   for j from low to high - 1
+    if array[j] <= pivot
+        i = i + 1
+        swap array[i] and array[j]
+   swap array[i + 1] and array[high]
+   return i + 1
+
+
+memo = {}
+
+function fibonacci_dp(n)
+  if n in memo
+    return memo[n] // Return cached result
+  if n <= 1
+    return n
+  memo[n] = fibonacci_dp(n-1) + fibonacci_dp(n-2)
+  return memo[n]
+
+  
