@@ -1,0 +1,111 @@
+Task 1:
+Pseudocode:
+function count_multiples(a, b, c):
+  if a > b:
+    swap(a, b)
+
+  first_multiple = ceil(a / c) * c
+  last_multiple = floor(b / c) * c
+
+  if first_multiple > last_multiple:
+    count = 0
+  else:
+      count = ((last_multiple - first_multiple) / c) + 1
+
+return count
+
+function ceil(x): 
+return  x if x is integer else integer(x) + 1
+
+function floor(x):
+return integer(x)
+
+function integer(x):
+return the whole part of x;
+
+function swap(x,y)
+temp = x
+x = y
+y = temp
+
+
+Python:
+
+import math
+
+def count_multiples(a, b, c):
+  if a > b:
+      a,b = b,a
+  first_multiple = math.ceil(a / c) * c
+  last_multiple = math.floor(b / c) * c
+    
+  if first_multiple > last_multiple:
+    return 0
+  else:
+return ((last_multiple - first_multiple) // c) + 1
+
+
+
+Task 2:
+Python Imp:
+def convert_base(number, from_base, to_base):
+    if from_base < 2 or to_base < 2:
+      return "Error: Base should be more than 1"
+    
+    if to_base > 16 or from_base > 16:
+      return "Error: not supported for base greater than 16"
+    
+def digit_to_dec(digit):
+    if '0' <= digit <= '9':
+        return ord(digit) - ord('0')
+    elif 'A' <= digit <= 'F':
+        return ord(digit) - ord('A') + 10
+    elif 'a' <= digit <= 'f':
+        return ord(digit) - ord('a') + 10
+    return -1 
+
+def dec_to_digit(value):
+      if value >= 0 and value <= 9:
+        return str(value)
+      elif value >= 10 and value <= 15:
+        return chr(ord('A') + value - 10)
+      return '?'
+
+decimal_value = 0
+power = 0
+for digit in reversed(number):
+    digit_val = digit_to_dec(digit)
+    if digit_val == -1 or digit_val >= from_base:
+        return "Invalid digit in the original number."
+    decimal_value += digit_val * (from_base ** power)
+    power += 1
+
+    if decimal_value == 0:
+    return '0'
+
+result_str = ""
+while decimal_value > 0:
+    remainder = decimal_value % to_base
+    result_str = dec_to_digit(remainder) + result_str
+    decimal_value //= to_base
+    
+return result_str
+
+
+
+Task 3:
+pseudocode:
+function find_max_5(arr):
+    max_val = arr[0]
+    
+    if arr[1] > max_val:
+        max_val = arr[1]
+    if arr[2] > max_val:
+        max_val = arr[2]
+    if arr[3] > max_val:
+        max_val = arr[3]
+    if arr[4] > max_val:
+        max_val = arr[4]
+
+return max_val
+
